@@ -114,7 +114,7 @@ function showFollowups(options) {
 function appendMessage(role, content) {
   const div = document.createElement("div");
   div.className = role;
-  div.innerText = content;
+  div.innerHTML = marked.parse(content);
   responseDiv.appendChild(div);
   responseDiv.scrollTop = responseDiv.scrollHeight;
 }
