@@ -22,9 +22,10 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["chat.html", "styles.css"],
+      "resources": ["chat.html", "styles.css", "marked.min.js"],
       "matches": ["<all_urls>"]
     }
   ],
   "options_page": "options.html"
 }
+
