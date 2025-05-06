@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Perplexity Med Sidebar",
+  "version": "1.0",
+  "description": "Select medical terms on any page and get sourced, professional explanations via Perplexity AI – optimized for physicians.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["chat.html", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "options_page": "options.html"
+}
