@@ -106,7 +106,7 @@ button#send:hover {
   background-color: #10a37f;
   color: white;
   border-radius: 6px;
-  padding: 6px 14px;
+  padding: 3px 7px;
   font-size: 14px;
   font-family: Arial, sans-serif;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -114,4 +114,44 @@ button#send:hover {
   position: absolute;
   z-index: 9999;
   border: none;
+}
+
+/* === Custom compact markdown styling === */
+#response h1,
+#response h2 {
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+
+#response h1 {
+  font-size: 1.1rem;
+}
+
+#response h2 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#response p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+#response p:last-child {
+  margin-bottom: 2px;
+}
+
+#response ul,
+#response ol {
+  padding-left: 20px;
+  margin: 4px 0;
+}
+
+#response li {
+  margin: 2px 0;
+}
+
+#response li p {
+  display: inline;
 }
